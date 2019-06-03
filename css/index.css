@@ -133,12 +133,15 @@ h1, h2, h3, h4, h5 {
 @media(max-width: 500px) {
 
     .navbar nav {
+        width: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
     .navbar nav a {
-        width: 100%;
+        justify-content: center;
+        /* width: 100%; */
         padding: 10px 20px;
         border-top: 1px solid black;
     }
@@ -263,7 +266,8 @@ h1, h2, h3, h4, h5 {
 /* CONTACT */
 
 .contact {
-	padding: 40px 0;
+    padding: 40px 0;
+    margin: 0 10px;
 }
 
 
