@@ -101,7 +101,6 @@ h1, h2, h3, h4, h5 {
 	padding: 20px;
 	font-weight: bold;
 	margin: 0 10px;
-	border-radius: 10px;
 }
 
 .logo {
@@ -130,6 +129,25 @@ h1, h2, h3, h4, h5 {
     }
 }
 
+
+@media(max-width: 500px) {
+
+    .navbar nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar nav a {
+        width: 100%;
+        padding: 10px 20px;
+        border-top: 1px solid black;
+    }
+
+    .navbar nav a:last-child {
+        border-bottom: 1px solid black;
+    }
+
+}
 
 
 /* SECTION ONE */
@@ -197,6 +215,26 @@ h1, h2, h3, h4, h5 {
 
 }
 
+@media(max-width: 500px) {
+    .content {
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        margin: 0 10px;
+    }
+
+    .section-two, .section-four {
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 0;
+    }
+
+    .section-two div, .section-four div {
+        margin-bottom: 40px;
+    }
+
+}
+
 
 
 /* SECTION THREE */
@@ -207,6 +245,13 @@ h1, h2, h3, h4, h5 {
 
 
 @media(max-width: 800px) {
+    .middle-img {
+        width: 100%;
+    }
+}
+
+
+@media(max-width: 500px) {
     .middle-img {
         width: 100%;
     }
