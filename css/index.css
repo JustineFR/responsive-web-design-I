@@ -126,9 +126,8 @@ h1, h2, h3, h4, h5 {
     .container .navbar div {
         justify-content: center;
         margin: 0 auto;
+        padding-right: 0;
     }
-
-
 }
 
 
@@ -154,6 +153,13 @@ h1, h2, h3, h4, h5 {
 
 
 
+@media(max-width: 800px) {
+    .large-img {
+        display: none;
+    } 
+}
+
+
 
 
 /* SECTION TWO */
@@ -165,7 +171,7 @@ h1, h2, h3, h4, h5 {
 
 .section-two, .section-four {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	padding: 40px 0;
 }
 
@@ -182,11 +188,28 @@ h1, h2, h3, h4, h5 {
 }
 
 
+@media(max-width: 800px) {
+    .content {
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        margin: 0 10px;
+    }
+
+}
+
+
 
 /* SECTION THREE */
 
 .middle-img {
 	width: 1000px;
+}
+
+
+@media(max-width: 800px) {
+    .middle-img {
+        width: 100%;
+    }
 }
 
 
